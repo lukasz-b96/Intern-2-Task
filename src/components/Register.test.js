@@ -96,7 +96,7 @@ test("7. Test not filled form with an E-mail", () => {
   expect(OutPut.textContent).toEqual("błąd walidacji");
 });
 
-test("8. Test filled form with a bad E-mail", () => {
+test("8. Test filled form with a wrong E-mail", () => {
   const { container } = render(<Register />);
   const RegisterButton = getByTestId(container, "register");
 
