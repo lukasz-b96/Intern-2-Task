@@ -4,7 +4,12 @@ const CustomInput = (props) => {
   return (
     <>
       <p>{props.fieldName}</p>
-      <CustomInput required type={props.type} onChange={props.handler} />
+      <input
+        data-testid="inputs"
+        required
+        type={props.type}
+        onChange={props.handler}
+      />
       <br /> <br />
     </>
   );

@@ -57,7 +57,7 @@ const Register = () => {
         <CustomInput handler={handleFirstName} fieldName="Imie" type="text" />
         <CustomInput
           handler={handlePasswordName}
-          fieldName="Haslo"
+          fieldName="Hasło"
           type="password"
         />
         <CheckBox handler={handleNewsletter} />
@@ -74,8 +74,10 @@ const Register = () => {
           // in input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,63}$"
         }
 
-        <button type="submit">Rejestracja</button>
-        <p>{info}</p>
+        <button data-testid="register" type="submit">
+          Rejestracja
+        </button>
+        <p data-testid="form">{info}</p>
       </form>
     </div>
   );
