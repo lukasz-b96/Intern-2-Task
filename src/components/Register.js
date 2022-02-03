@@ -7,11 +7,11 @@ const Register = () => {
   const [newsletter, setNewsletter] = useState(false);
   const [info, setInfo] = useState("");
 
-  const handleFirstName = (event) => {
-    setValues({ ...values, firstName: event.target.value });
+  const handleName = (event) => {
+    setValues({ ...values, name: event.target.value });
   };
-  const handlePasswordName = (event) => {
-    setValues({ ...values, passwordName: event.target.value });
+  const handlepassword = (event) => {
+    setValues({ ...values, password: event.target.value });
   };
   const handleEmail = (event) => {
     setValues({ ...values, email: event.target.value });
@@ -23,14 +23,14 @@ const Register = () => {
     } else {
       setNewsletter(false);
       const data = { ...values };
-      setValues({ firstName: data.firstName, passwordName: data.passwordName });
+      setValues({ name: data.name, password: data.password });
     }
   };
 
-  const handleSubmit = (event) => {
+  const handleButton = (event) => {
     event.preventDefault();
 
-    if (values.firstName && values.passwordName) {
+    if (values.name && values.password) {
       if (newsletter) {
         if (
           values.email &&
@@ -39,12 +39,14 @@ const Register = () => {
         ) {
           setInfo("pomyślna rejestracja");
           console.log(values);
+          //document.forms[0].submit();
         } else {
           setInfo("błąd walidacji");
         }
       } else {
         setInfo("pomyślna rejestracja");
         console.log(values);
+        //document.forms[0].submit();
       }
     } else {
       setInfo("błąd walidacji");
@@ -53,10 +55,10 @@ const Register = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} method="post">
-        <CustomInput handler={handleFirstName} fieldName="Imie" type="text" />
+      <form id="form1" method="post">
+        <CustomInput handler={handleName} fieldName="Imie" type="text" />
         <CustomInput
-          handler={handlePasswordName}
+          handler={handlepassword}
           fieldName="Hasło"
           type="password"
         />
@@ -74,7 +76,7 @@ const Register = () => {
           // in input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,63}$"
         }
 
-        <button data-testid="register" type="submit">
+        <button data-testid="register" onClick={handleButton}>
           Rejestracja
         </button>
         <p data-testid="form">{info}</p>

@@ -14,9 +14,10 @@
 - This task could be resolved in multiple ways: useReducer, Vanilla JavaScript, etc.
 - I decided to not overcomplicate it and I just used useState\
   and I simply passed "handlers" in props
-- To provide simple validations I used HTML attributes
+- Due to fact that I use "onClick" rather than "onSubmit"\
+  I gave up on simple HTML validations (required etc.)
 - In e-mail input, I stick to the task proposal and just validate that\
-  If the string contains at least one "." and at most one "@"
+  If the string contains at least one "." and at most one "@" (I could use regex)
 - Then, I created two simple reusable components: CustomInput and Checkbox
 - Solution does not contain any styling so to have new lines I used <br/> tags
 
