@@ -12,7 +12,7 @@
 
 - This task could be resolved in multiple ways: useReducer, Vanilla JavaScript, etc.
 - I decided to not overcomplicate it and I just used useState\
-  and simply passed "handlers" in props
+  and I simply passed "handlers" in props
 - To provide simple validations I used HTML attributes
 - In e-mail input, I stick to the task proposal and just validate that\
   If the string contains at least one "." and at most one "@"
