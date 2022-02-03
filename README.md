@@ -24,11 +24,12 @@
 - Under the "Rejestracja" appears a message "błąd walidacji: or "pomyślna rejestracja"\
   that depends on the validation results
 - I wrote all necessary unit tests:
-  1. Test if elements are rendered
-  2. Test if the CheckBox is initially empty and whether it works
-  3. Test if the E-mail input appears
-  4. Test if inputs are empty
-  5. Test basic not filled form
-  6. Test basic filled form
-  7. Test not filled form with an E-mail
-  8. Test filled form with a wrong E-mail
+  - Test if elements are rendered
+  - Test if the CheckBox is initially empty and whether it works
+  - Test if the E-mail input appears
+  - Test if inputs are empty
+  - Test basic not filled form
+  - Test basic filled form
+  - Test not filled form with an E-mail
+  - Test filled form with a wrong E-mail
+  - Test filled form with a good E-mail
