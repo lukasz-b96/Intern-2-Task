@@ -23,7 +23,7 @@
 
 - Under the "Rejestracja" appears a message "błąd walidacji: or "pomyślna rejestracja"\
   that depends on the validation results
-- I wrote all necessary unit tests:
+- I wrote all necessary unit tests (Register.test.js):
   - Test if elements are rendered
   - Test if the CheckBox is initially empty and whether it works
   - Test if the E-mail input appears
