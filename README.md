@@ -7,6 +7,7 @@
 - I decided to split this task into three files
 - It was not so necessary because the problem was easy and not complicated
 - The main component is "Register.js"
+- The valid output is in the console
 
 ### The approach to the problem:
 

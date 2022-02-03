@@ -70,7 +70,7 @@ const Register = () => {
             />
           ) : null
           // another approach
-          // but i will stick to task specification: "@" == 0 && "." >= 1
+          // but I will stick to task specification: "@" == 0 && "." >= 1
           // in input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,63}$"
         }
 
