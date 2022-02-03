@@ -1,6 +1,6 @@
 # Author: Łukasz Baran
 
-## Intern Task for Software Mind
+## Intern Task 
 
 ### Solution can be found in folder "components":
 
