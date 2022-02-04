@@ -19,7 +19,7 @@
 - In e-mail input, I stick to the task proposal and just validate that\
   If the string contains at least one "." and at most one "@" (I could use regex)
 - Then, I created two simple reusable components: CustomInput and Checkbox
-- Solution does not contain any styling so to have new lines I used <br/> tags
+- Solution does not contain any styling so to have new lines I used "<br />" tags
 
 ### Optional Requirements:
 
