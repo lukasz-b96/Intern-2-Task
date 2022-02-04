@@ -23,7 +23,7 @@
 
 ### Optional Requirements:
 
-- Under the "Rejestracja" appears a message "błąd walidacji: or "pomyślna rejestracja"\
+- Under the "Rejestracja" appears a message "błąd walidacji or "pomyślna rejestracja"\
   that depends on the validation results
 - I wrote all necessary unit tests (Register.test.js):
   - Test if elements are rendered
